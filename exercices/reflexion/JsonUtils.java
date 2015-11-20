@@ -58,7 +58,7 @@ public class JsonUtils {
 		if (tabNameVal[2].equals("String"))
 			prefSuf = "\"";
 		
-		sb.append(tabNameVal[0] + ": " + prefSuf + tabNameVal[1] + prefSuf + ",");
+		sb.append("\"" + tabNameVal[0] + "\"" + ": " + prefSuf + tabNameVal[1] + prefSuf + ",");
 	}
 	
 	public static String[] createName(Object o, AnnotatedElement fieldMethod) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException{
